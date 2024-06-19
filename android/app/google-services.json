@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "924474583215",
+    "project_id": "tax-app-test-data",
+    "storage_bucket": "tax-app-test-data.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924474583215:android:ee5a3f3b3d7cdba7814c5a",
+        "android_client_info": {
+          "package_name": "com.example.tax_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtnGL8uGWAXVowngSOuuCdg6TU_ea9K9g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
