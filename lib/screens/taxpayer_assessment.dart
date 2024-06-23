@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:tax_app/screens/tax_assessment.dart';
+import 'package:tax_app/screens/tax_payer_id.dart';
 
 enum BusinessSector { Transportation, Agriculture, General }
 
@@ -348,7 +349,7 @@ class _TaxPayerAssessmentState extends State<TaxPayerAssessment> {
             GestureDetector(
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => const TaxAssessment()));
+                    builder: (context) => const TaxPayerId()));
               },
               child: Container(
                 height: 52.h,

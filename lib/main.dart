@@ -6,7 +6,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:permission_handler/permission_handler.dart';
+import 'package:provider/provider.dart';
 import 'package:tax_app/firebase_options.dart';
+import 'package:tax_app/providers/tax_app_provider.dart';
 import 'package:tax_app/screens/dashboard.dart';
 import 'package:tax_app/screens/new_taxpayer.dart';
 import 'package:tax_app/screens/new_taxpayer_NIN.dart';
@@ -31,7 +33,8 @@ void main() async {
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown,
-  ]).then((value) => runApp(const MyApp()));
+  ]).then((value) => runApp(ChangeNotifierProvider(
+      create: (context) => TaxAppProvider(), child: const MyApp())));
 }
 
 class MyApp extends StatelessWidget {
